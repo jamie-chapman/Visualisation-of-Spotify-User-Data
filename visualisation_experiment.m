@@ -80,18 +80,5 @@ subplot(5,2,10);
 histogram(D(:,12), 100, 'FaceColor', 'r');
 hold on;
 line([mean(D(:,12)), mean(D(:,12))], ylim, 'LineWidth', 2, 'Color', 'k');
-title('Tempo');
-
-%N.B. Order of Features:
-%popularity1, danceability2, energy3, key4, loudness5, mode6, speechiness7,
-%acousticness8, instrumentalness9, liveness10, valence11, tempo12
-
-%Popularity vs tempo
 % plot(D(:,1), D(:,12),'k.');
-
-% %Popularity vs loudness
-% plot(D(:,1), D(:,5),'k.');
-
-% %Popularity vs energy
-% %N.B Some correlation between lower energy and less popularity
-% plot(D(:,1), D(:,3),'k.');
+title('Tempo');
